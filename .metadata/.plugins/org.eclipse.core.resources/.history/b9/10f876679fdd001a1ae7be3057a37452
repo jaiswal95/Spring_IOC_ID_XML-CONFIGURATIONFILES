@@ -1,0 +1,13 @@
+package com.pankaj.SpringDemo;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+
+		// Create the Object
+		BaseballCoach thecoach = new BaseballCoach();
+		// Use the Object
+		thecoach.getDailyWorkout();
+	}
+
+}

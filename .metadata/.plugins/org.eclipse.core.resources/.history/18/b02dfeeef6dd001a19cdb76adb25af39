@@ -1,0 +1,11 @@
+package com.pankaj.SpringDemo;
+
+public class CricketCoach implements Coach {
+
+	@Override
+	public String getDailyWorkout() {
+
+		return "Practice the balling on a net for atleast 30 min.";
+	}
+
+}

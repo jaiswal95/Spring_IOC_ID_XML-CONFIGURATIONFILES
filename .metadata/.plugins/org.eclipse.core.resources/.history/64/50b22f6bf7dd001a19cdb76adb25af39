@@ -1,0 +1,22 @@
+package com.pankaj.SpringDemo;
+
+public class CricketCoach implements Coach {
+	private FortuneService fortuneservice;
+
+	public CricketCoach(FortuneService fortuneservice) {
+		this.fortuneservice = fortuneservice;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+
+		return "Practice the balling on a net for atleast 30 min.";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.pankaj.SpringDemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SpringHelloApp {
+
+	public static void main(String[] args) {
+
+		// Load the configuration file(Create a spring Container)
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+		// Retrieve bean from Spring Container
+		Coach theCoach = context.getBean("myCoach", Coach.class);
+
+		// Call methods on the bean
+		System.out.println(theCoach.getDailyWorkout());
+		
+		// Let's call our new method for fortune
+		System.out.println(theCoach.getDailyWorkout());
+
+		// Close the context file
+		context.close();
+
+	}
+
+}

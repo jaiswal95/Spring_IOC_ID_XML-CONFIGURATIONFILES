@@ -1,0 +1,24 @@
+package com.pankaj.SpringDemo;
+
+public class BaseballCoach implements Coach {
+
+	// Define a Private field for Dependency
+	private FortuneService fortuneservice;
+
+	// Define a Constructor for Dependency Injection
+	public BaseballCoach(FortuneService thefortuneservice) {
+		this.fortuneservice = thefortuneservice;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+		return "Spend 30 min on batting practice.";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

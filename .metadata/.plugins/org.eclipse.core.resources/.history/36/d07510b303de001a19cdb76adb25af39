@@ -1,0 +1,34 @@
+package com.pankaj.SpringDemo;
+
+public class CricketCoach implements Coach {
+
+	// Define a Private field for Dependency
+	private FortuneService fortuneService;
+
+	/*
+	 * Create a no-arg constructor(Spring gonna call this constructor when they make
+	 * a refernce to our bean).
+	 */
+	public CricketCoach() {
+		System.out.println("CricketCoach: Inside no-arg constructor");
+	}
+
+	// Create a setter method in ur class for injection
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("CricketCoach: Inside setter method - setFortuneService");
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+
+		return "Practice the balling on a net for atleast 30 min.";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// Use my fortuneService to get a fortune
+		return fortuneService.getFortune();
+	}
+
+}

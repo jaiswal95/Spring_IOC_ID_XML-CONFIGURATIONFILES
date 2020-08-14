@@ -1,0 +1,14 @@
+package com.pankaj.SpringDemo;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+
+		// Create the Object(Use the interface)
+		Coach thecoach = new BaseballCoach();
+
+		// Use the Object(It can work with any coach implementation.)
+		System.out.println(thecoach.getDailyWorkout());
+	}
+
+}
