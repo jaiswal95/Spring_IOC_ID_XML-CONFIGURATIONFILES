@@ -23,7 +23,7 @@ This project is created to show the inversion of control and injection dependenc
 - Spring Bean LifeCycle 
   - init and destroy method
   - Development process
-    - Define youe methods for init and destroy method
+    - Define your methods for init and destroy method
     - Configure the method names in Spring Config. file
   - For "prototype" scoped beans, Spring Does not call the destroy method
     - It is handled by using custom coding to overcome this situation
