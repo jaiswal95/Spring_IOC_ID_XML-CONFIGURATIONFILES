@@ -1,6 +1,8 @@
 package com.pankaj.SpringDemo;
 
-public class TrackCoach implements Coach {
+import org.springframework.beans.factory.DisposableBean;
+
+public class TrackCoach implements Coach, DisposableBean {
 
 	// Define a Private field for Dependency
 	private FortuneService fortuneService;
@@ -21,6 +23,22 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		// Use my fortuneService to get a fortune
 		return fortuneService.getFortune();
+	}
+
+	// Add an init method
+	public void doMyStartupStuff() {
+		System.out.println("TrackCoach: Inside method -> doMyStartupStuff ");
+	}
+
+	// Add a destroy method for singleton Scope
+	public void doMyCLeanupStuff() {
+		System.out.println("TrackCoach: Inside method -> doMyCleanupStuff ");
+	}
+
+	// Add a destroy method for prototype Scope
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("TrackCoach: inside method doMyCleanupStuff(prototype)");
 	}
 
 }

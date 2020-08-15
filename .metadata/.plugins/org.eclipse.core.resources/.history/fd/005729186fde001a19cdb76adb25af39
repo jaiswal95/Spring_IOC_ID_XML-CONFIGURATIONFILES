@@ -1,0 +1,11 @@
+package com.pankaj.SpringDemo;
+
+public class HappyFortuneService implements FortuneService{
+
+	@Override
+	public String getDAilyFortune() {
+		
+		return "Today is your Lucky Day!";
+	}
+
+}

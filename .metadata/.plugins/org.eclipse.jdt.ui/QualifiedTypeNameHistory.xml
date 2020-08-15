@@ -7,5 +7,9 @@
     <fullyQualifiedTypeName name="com.pankaj.SpringDemo.BaseballCoach"/>
     <fullyQualifiedTypeName name="com.pankaj.SpringDemo.Coach"/>
     <fullyQualifiedTypeName name="com.pankaj.SpringDemo.CricketCoach"/>
+    <fullyQualifiedTypeName name="com.pankaj.SpringDemo.FortuneService"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>
